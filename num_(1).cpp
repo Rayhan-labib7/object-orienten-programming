@@ -2,13 +2,13 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-class Preson
+class Person
 {
     public :
     virtual void Set(int,string)=0;
     virtual void Introduce()=0;
 };
-class Student
+class Student:Public Person
 {
     public :
     int Sage;
@@ -27,7 +27,7 @@ class Student
         cout<<"Age : "<<Sage<<endl<<"Name :"<<Sname<<endl;
     }
 };
-class Teacher
+class Teacher:Public Person
 {
     public :
     int Tage;
