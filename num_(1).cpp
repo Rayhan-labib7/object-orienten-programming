@@ -8,7 +8,7 @@ class Person
     virtual void Set(int,string)=0;
     virtual void Introduce()=0;
 };
-class Student:Public Person
+class Student: public Person
 {
     public :
     int Sage;
@@ -27,7 +27,7 @@ class Student:Public Person
         cout<<"Age : "<<Sage<<endl<<"Name :"<<Sname<<endl;
     }
 };
-class Teacher:Public Person
+class Teacher: public Person
 {
     public :
     int Tage;
